@@ -1,4 +1,10 @@
 .banner {
-  background-color: aqua;
-  height: 200px;
+  height: 500px;
+  background-image: url("https://picsum.photos/1200/900?random=1");
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.banner-text {
+  padding-top: 150px;
 }
