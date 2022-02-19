@@ -1,19 +1,48 @@
 .banner {
-  height: 500px;
-  background-image: url("https://picsum.photos/1200/900?random=1");
-  background-size: cover;
+  height: 560px;
+  background-image: url("/images/banner.png");
+  background-size: contain;
   margin-bottom: 100px;
+  background-color: #FBD0DC;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .banner-text {
-  padding-top: 150px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .cursive {
   font-family: 'Pacifico', cursive;
-  font-size: larger;
+  border: 2px solid black;
+  padding: 4px;
+  font-weight: initial;
+  /* box-shadow: 0 0 16px 4px #a5c5ff;
+  background-color: #a5c5ff; */
+}
+
+.banner-btn {
+  top: 245px;
+  left: 300px;
 }
 
 .tagline {
   margin-bottom: 40px;
+}
+
+.header {
+  display: flex;
+  width: 280px;
+  font-size: larger;
+  position: absolute;
+}
+
+.type-box {
+  position: relative;
+  font-size: small;
+  top: 230px;
+  left: -90px;
 }
