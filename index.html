@@ -7,35 +7,38 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   </head>
-  <body>
+  <body onload="typeWriter()" onscroll="typeWriter()">
     <div class="banner">
       <div class="banner-text">
         <div class="container">
           <h1>Welcome To Women's Coding Day</h1>
-          <p>Girls Just Wanna Have Fundamental Coding Skills</p>
-          <a href="https://www.lewagon.com/" target="_blank">Apply Now</a>
+          <p class="tagline">Girls Just Wanna Have Fun<span class="cursive" id="typewriter"></span></p>
+          <a href="https://www.lewagon.com/" target="_blank" class="btn">Apply Now</a>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <h2>Title</h2>
+      <h2 style="text-align: center;">Title</h2>
 
       <div class="cards">
         <div class="card">
-          <img src="https://picsum.photos/250/250?random=1" alt="">
-          <div class="h3"></div>
-          <p></p>
+          <img src="https://picsum.photos/200/200?random=1" alt="">
+          <h3>Women in Tech Stats</h3>
+          <p>Still lots of work to be done.</p>
+          <a href="https://www.womentech.net/en-gb/women-technology-statistics" target="_blank" class="btn card-btn">Check it out</a>
         </div>
         <div class="card">
-          <img src="https://picsum.photos/250/250?random=2" alt="">
-          <div class="h3"></div>
-          <p></p>
+          <img src="https://picsum.photos/200/200?random=2" alt="">
+          <h3>The Power of Code</h3>
+          <p>So much to do with programming - here are some cool ideas.</p>
+          <a href="https://what-to-code.com/" target="_blank" class="btn card-btn">Check it out</a>
         </div>
         <div class="card">
-          <img src="https://picsum.photos/250/250?random=3" alt="">
-          <div class="h3"></div>
-          <p></p>
+          <img src="https://picsum.photos/200/200?random=3" alt="">
+          <h3>Practice Makes Perfect</h3>
+          <p>There are lots of free resources to hone your skills as a developer.</p>
+          <a href="https://www.codecademy.com/" target="_blank" class="btn card-btn">Check it out</a>
         </div>
       </div>
     </div>
@@ -43,5 +46,31 @@
     <div class="footer">
       <p>This is the footer</p>
     </div>
+
+    <script>
+      var i = 0;
+      var j = 0;
+      var txt = ['damental Coding Skills', 'ctional Programming Practice', 'another blabla'];
+      var speed = 150;
+
+      function typeWriter() {
+        if (i < txt[j].length) {
+          document.getElementById("typewriter").innerHTML += txt[j].charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        } else if (i === txt[j].length) {
+          document.getElementById("typewriter").innerHTML = ""
+          i = 0
+
+          if (j === txt.length - 1) {
+            j = 0
+          } else {
+            j++
+          }
+
+          typeWriter()
+      }
+        }
+    </script>
   </body>
 </html>

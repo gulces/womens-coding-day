@@ -8,3 +8,12 @@
 .banner-text {
   padding-top: 150px;
 }
+
+.cursive {
+  font-family: 'Pacifico', cursive;
+  font-size: larger;
+}
+
+.tagline {
+  margin-bottom: 40px;
+}

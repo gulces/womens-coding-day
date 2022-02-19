@@ -1,0 +1,18 @@
+.btn {
+  border: 1px solid black;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: rgba(20, 139, 162, 0.5);
+  margin-top: 20px;
+}
+
+.card-btn {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 16px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 16px 4px #a5c5ff
+}
