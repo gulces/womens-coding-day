@@ -61,6 +61,7 @@
 }
 .rotate a:after{
   color: #000;
+  background-color: #F0A7B6;
   transform: rotateX(90deg) translateZ(25px);
 }
 .rotate a:hover{
@@ -74,7 +75,7 @@
 /* Card Button */
 
 .button {
-	pointer-events: auto;
+  pointer-events: auto;
 	cursor: pointer;
 	background: #e7e7e7;
 	border: none;
@@ -89,7 +90,7 @@
 
 .button::before,
 .button::after {
-	position: absolute;
+  position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -97,22 +98,35 @@
 }
 
 .button--pandora {
-	background: #000;
+  background: #000;
 	font-weight: 700;
 	padding: 0;
 	border-radius: 5px;
 }
 
 .button--pandora span {
-	display: block;
+  display: block;
 	background: #ffffff;
 	padding: 1.5rem 2rem;
 	border: 1px solid #000;
 	border-radius: 5px;
-	transform: translate3d(-4px, -4px, 0);
+	transform: translate3d(4px, -4px, 0);
 	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 }
 
 .button--pandora:hover span {
-	transform: translate3d(-8px, -8px, 0);
+  transform: translate3d(8px, -8px, 0);
+}
+
+
+.trial {
+  width: 250px;
+  position: relative;
+  right: 100px;
+  bottom: 200px;
+  left: 1px;
+  top: -135px;
+  font-family: 'IBM Plex Serif', serif;
+  text-decoration: none;
+  color: black;
 }

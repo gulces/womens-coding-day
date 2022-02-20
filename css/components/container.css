@@ -21,3 +21,14 @@
     width: 400px;
   }
 }
+
+.background-img {
+    z-index: -2;
+    width: auto;
+    height: 700px;
+    opacity: 0.5;
+    margin-top: 400px;
+    position: absolute;
+    left: 550px;
+    top: 366px;
+}
