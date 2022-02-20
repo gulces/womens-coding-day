@@ -1,9 +1,9 @@
 .banner {
   height: 560px;
-  background-image: url("/images/banner.png");
+  background-image: url("/images/banner-lighter.png");
   background-size: contain;
   margin-bottom: 100px;
-  background-color: #FBD0DC;
+  background-color: #FEE7ED;
   background-repeat: no-repeat;
   background-position-x: center;
 }
@@ -20,8 +20,9 @@
   border: 2px solid black;
   padding: 4px;
   font-weight: initial;
-  /* box-shadow: 0 0 16px 4px #a5c5ff;
-  background-color: #a5c5ff; */
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: -4px 4px #F0A7B6;
+  /* background-color: #a5c5ff; */
 }
 
 .banner-btn {
