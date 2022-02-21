@@ -56,12 +56,12 @@
 }
 .rotate a:before{
   color: #fff;
-  background: #000;
+  background: #1C2321;
   transform: rotateY(0deg) translateZ(25px);
 }
 .rotate a:after{
-  color: #000;
-  background-color: #F0A7B6;
+  color: #1C2321;
+  background-color: white;
   transform: rotateX(90deg) translateZ(25px);
 }
 .rotate a:hover{
@@ -122,10 +122,10 @@
 .trial {
   width: 250px;
   position: relative;
-  right: 100px;
+  right: 66px;
   bottom: 200px;
-  left: 1px;
-  top: -135px;
+  left: -123px;
+  top: -43px;
   font-family: 'IBM Plex Serif', serif;
   text-decoration: none;
   color: black;

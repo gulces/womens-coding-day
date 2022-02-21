@@ -32,3 +32,21 @@
     left: 550px;
     top: 366px;
 }
+
+.main {
+  z-index: -2;
+  width: auto;
+  height: 700px;
+  background-size: cover;
+}
+
+.top {
+  position: absolute;
+}
+
+.bottom {
+  position: absolute;
+  bottom: -900px;
+  margin-top: 200px;
+  margin-left: -400px;
+}
