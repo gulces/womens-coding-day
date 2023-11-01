@@ -42,11 +42,14 @@
 
 .top {
   position: absolute;
+  top: 670px;
+  right: -100px;
+  opacity: 0.2;
 }
 
 .bottom {
   position: absolute;
-  bottom: -900px;
-  margin-top: 200px;
-  margin-left: -400px;
+  top: 870px;
+  left: -60px;
+  opacity: 0.2;
 }
