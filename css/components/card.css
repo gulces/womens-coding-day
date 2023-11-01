@@ -1,13 +1,15 @@
 .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    z-index: 2;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: -302px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 2;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: -332px;
+  position: relative;
+  top: -289px;
 }
 
 .card {
@@ -45,16 +47,34 @@
   display: flex;
 }
 
-.second-row {
-  display: flex;
-}
-
 .first-col {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 200px;
 }
+
+.second-row {
+  display: flex;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+.top-card {
+  left: 222px;
+  top: 91px;
+}
+
+.middle-card {
+  right: -192px;
+  top: 404px;
+}
+
+.bottom-card {
+  left: -10px;
+  top: 358px;
+}
+
 
 .card-content {
   position: relative;
@@ -66,9 +86,4 @@
   text-align: left;
 }
 
-.fa-heart {
-    position: relative;
-    right: -170px;
-    bottom: -12px;
-    color: rgba(187, 10, 33, 0.3);
-}
+

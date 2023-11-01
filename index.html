@@ -8,63 +8,64 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   </head>
   <body onload="typeWriter()">
-    <img src="/images/women-hands.png" alt="" class="main top">
-    <div class="banner">
+    <img src="/images/women-hands.png" alt="" class="background-img" id="top-img">
+    <div class="container" id="frame">
       <div class="container">
-        <div class="banner-text">
-          <div class="header">
-            <div class="type-box">
-              <h1><span class="cursive" id="typewriter"></span></h1>
+        <div id="banner">
+          <div class="banner-text">
+            <div class="header">
+              <div class="type-box">
+                <h1><span class="cursive" id="typewriter"></span></h1>
+              </div>
+            </div>
+            <div>
+              <span class="rotate banner-btn"><a href="https://www.lewagon.com/" target="_blank">LEARN MORE</a></span>
             </div>
           </div>
-          <div>
-            <span class="rotate banner-btn"><a href="https://www.lewagon.com/" target="_blank">LEARN MORE</a></span>
+        </div>
+        <div class="welcome-message">
+          <h1>Congratulations!</h1>
+          <h2>For taking your first step and embarking on your learning journey.</h2>
+          <p>Whether this is your first time or you're looking to hone your skills, we've got something special just for you. Here's some content to get you in the coding spirit and inspire your tech adventure. Happy coding!</p>
+        </div>
+        <div class="cards">
+          <div class="first-row">
+            <div class="first-col">
+              <div class="card top-card">
+                  <img src="/images/graph-animation.gif" alt="" style="width: 300px; height: 200px;">
+                  <a href="https://www.womentech.net/en-gb/women-technology-statistics" target="_blank"
+                    class="button button--pandora trial"><span>Women In Tech Stats</span></a>
+                  <p class="card-content">Still lots of work to be done.</p>
+              </div>
+            </div>
+            <div class="div" style="width: 80px;"></div>
+            <div class="second-col">
+              <div style="height: 50px;"></div>
+              <div class="card middle-card">
+                <img src="/images/let-coffee.png" alt="">
+                <a href="https://what-to-code.com/" target="_blank" class="button button--pandora trial"><span>The Power of Code</span></a>
+                  <p class="card-content">So much to do with programming - here are some cool ideas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="second-row">
+            <div class="card bottom-card">
+                <img src="/images/woman-universe.png" alt="">
+                <a href="https://www.codecademy.com/" target="_blank" class="button button--pandora trial"><span>Practice Makes Perfect</span></a>
+                <p class="card-content">There are lots of free resources to hone your skills as a developer.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <h2 style="text-align: center;">Title</h2>
-      <!-- <img src="/images/women-hands.jpeg" alt="" class="background-img"> -->
-      <div class="cards">
-        <div class="first-row">
-          <div class="first-col">
-            <div class="card" style="left: 140px;">
-                <img src="/images/graph-animation.gif" alt="" style="width: 300px; height: 200px;">
-                <a href="https://www.womentech.net/en-gb/women-technology-statistics" target="_blank"
-                  class="button button--pandora trial"><span>Women In Tech Stats</span></a>
-                <!-- <h3>Women in Tech Stats</h3> -->
-                <p class="card-content">Still lots of work to be done.</p>
-                <i class="fa fa-solid fa-heart"></i>
-            </div>
-            <!-- <img src="/images/mondo-drag.jpeg" alt="" class="background-img"> -->
-          </div>
-          <div class="div" style="width: 80px;"></div>
-          <div class="second-col">
-            <div style="height: 50px;"></div>
-            <div class="card" style="right: -240px; top: 120px;">
-              <img src="/images/let-coffee.png" alt="">
-              <a href="https://what-to-code.com/" target="_blank" class="button button--pandora trial"><span>The Power of Code</span></a>
-                <p class="card-content">So much to do with programming - here are some cool ideas.</p>
-            </div>
-          </div>
-        </div>
-        <div class="second-row">
-          <div class="card" style="left: -10px; top: 80px; margin-bottom: 150px;">
-              <img src="/images/woman-universe.png" alt="">
-              <a href="https://www.codecademy.com/" target="_blank" class="button button--pandora trial"><span>Practice Makes Perfect</span></a>
-              <p class="card-content">There are lots of free resources to hone your skills as a developer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="/images/women-hands copy.png" alt="" class="main bottom">
-
+    <img src="/images/women-hands copy.png" alt="" class="background-img" id="bottom-img">
     <div class="footer">
-      <p>Keep In Touch</p>
-      <div class="icons">
-        <a href="https://github.com/gulces"><i class="fab fa-brands fa-github links"></i></a>
-        <a href="https://www.linkedin.com/in/gulce-sakallioglu/"><i class="fab fa-brands fa-linkedin links"></i></a>
+      <div class="footer-components">
+        <div class="icons">
+          <a href="https://github.com/gulces"><i class="fab fa-brands fa-github icon"></i></a>
+          <a href="https://www.linkedin.com/in/gulce-sakallioglu/"><i class="fab fa-brands fa-linkedin icon"></i></a>
+        </div>
+        <p>Keep In Touch</p>
       </div>
     </div>
 
@@ -72,7 +73,6 @@
       var i = 0;
       var j = 0;
       var txt = 'damental Coding Skills!';
-      // var txt = ['damental Coding Skills', 'ctional Programming Practice', '... coding!'];
       var speed = 150;
 
       function typeWriter() {
@@ -83,16 +83,9 @@
         } else if (i === txt.length) {
           document.getElementById("typewriter").innerHTML = ""
           i = 0
-
-          // if (j === txt.length - 1) {
-          //   j = 0
-          // } else {
-          //   j++
-          // }
-
           typeWriter()
-      }
         }
+      }
     </script>
   </body>
 </html>

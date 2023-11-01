@@ -1,17 +1,42 @@
 .footer {
   background-color: black;
-  height: 150px;
-  margin-top: 100px;
+  height: 80px;
   color: white;
   display: flex;
-  align-items: flex-end;
-  justify-content: right;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.5;
 }
 
-.links {
+.footer:hover {
+  opacity: 0.8;
+}
+
+.footer-components {
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 40px;
+  font-weight: 300;
+}
+
+.icons {
+  width: 74px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
   color: #FEE7ED;
+  font-size: 24px;
 }
 
-.links:hover {
+.icon:hover {
   color: aliceblue;
 }
